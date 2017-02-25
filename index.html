@@ -10,17 +10,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/index.css">
     <!--rem-->
-    <script>
-        ~function () {
-            var desW = 640;
-            var winW = document.documentElement.clientWidth;
-            if (winW > 640) {
-                document.documentElement.style.fontSize='60px';
-                return;
-            };
-            document.documentElement.style.fontSize = winW / desW * 100 + 'px';
-        }();
-    </script>
+    <script src="js/rem640.js"></script>
 </head>
 <body>
     <div class="main">
@@ -31,8 +21,12 @@
             <div class="swiper-container">
                <div class="swiper-wrapper">
                    <div class="swiper-slide"><img src="image/guide2.jpg" alt=""></div>
+                   <div class="swiper-slide"><img src="image/guide2.jpg" alt=""></div>
+                   <div class="swiper-slide"><img src="image/guide2.jpg" alt=""></div>
                </div>
                 <!--点-->
+                <div class="swiper-pagination">
+                </div>
             </div>
             <!--药店入口-->
             <section class="content-padded">
@@ -81,4 +75,6 @@
         </footer>
     </div>
 </body>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
 </html>
