@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--rem-->
+    <script>
+        ~function () {
+            var desW = 640;
+            var winW = document.documentElement.clientWidth;
+            if (winW > 640) {
+                document.documentElement.style.fontSize='60px';
+                return;
+            };
+            document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+        }();
+    </script>
+</head>
+<body>
+    <div class="main">
+        <!--header-->
+        <header class="bar">远程健康咨询</header>
+        <!--nav-->
+        <section class="content">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide"><img src="image/guide2.jpg" alt=""></div>
+               </div>
+                <!--点-->
+            </div>
+            <!--药店入口-->
+            <section class="content-padded">
+                <div class="row">
+                    <div class="col-50" style="background-color: #1a79ef;">
+                        <img src="image/icon_zxcf.png" alt="">
+                        <div>在线处方</div>
+                    </div>
+                    <div class="col-50" style="background-color: #5bc03c;">
+                        <img src="image/icon_zljl.png" alt="">
+                        <div>诊疗记录</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50" style="background-color: #00b7c7;">
+                        <img src="image/lhyy.png" alt="">
+                        <div>联合用药</div>
+                    </div>
+                    <div class="col-50" style="background-color: #e9bb00;">
+                        <img src="image/jjsz.png" alt="">
+                        <div>急救手册</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50" style="background-color: #fb9300;">
+                        <img src="image/yybk.png" alt="">
+                        <div>医药百科</div>
+                    </div>
+                    <div class="col-50" style="background-color: #f75478;">
+                        <img src="image/yszd.png" alt="">
+                        <div> 养生之道</div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--footer-->
+        <footer class="footer footer-tab">
+            <a class="footer-item active" href="#">
+                <span class="icon iconfont icon-home"></span>
+                <span class="footer-title">主页</span>
+            </a>
+            <a class="footer-item" href="#">
+                <span class="icon iconfont icon-home"></span>
+                <span class="footer-title">个人中心</span>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

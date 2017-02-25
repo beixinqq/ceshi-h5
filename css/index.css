@@ -1,0 +1,148 @@
+html{
+    font-size: 100px;
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+.main{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 640px;
+    color: #555;
+}
+a{
+    display: block;
+    color: #555;
+}
+/*header*/
+header.bar{
+    position: absolute;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 10;
+    height: .88rem;
+    line-height: .88rem;
+    background-color: #2ec5ce;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: .3rem;
+    letter-spacing: .01rem;
+}
+/*section*/
+.content{
+    position: absolute;
+    top:.88rem;
+    bottom: .89rem;
+    overflow: auto;
+    right: 0;
+    left: 0;
+}
+.content .swiper-container{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*padding-bottom: .2rem;*/
+    z-index: 1;
+}
+.content .swiper-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+.content .swiper-slide{
+
+}
+.content .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Ò©µêÈë¿Ú*/
+.content-padded{
+    box-sizing: border-box;
+    margin: 0.05rem;
+}
+.row{
+    overflow: hidden;
+    margin-bottom: 0.35rem;
+    /**/
+}
+.row>[class*='col-']{
+    box-sizing: border-box;
+    float: left;
+}
+.row .col-50{
+    background-color: #1a79ef;
+    border-radius: .2rem ;
+    padding: 0.2rem;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+.row .col-50 img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+.row .col-50 div{
+    color: #FFFFFF;
+    font-size: .25rem;
+    letter-spacing: .02rem;
+    font-weight: normal;
+    padding-top: .1rem;
+}
+/*footer*/
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #2ec5ce;
+}
+.footer-tab{
+    bottom: 0;
+    width: 100%;
+    height: .88rem;
+    padding: 0;
+    table-layout: fixed;
+}
+.footer-tab a{
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    color: #c8d4d4;
+}
+.footer-tab .footer-item.active{
+    color: #FFFFFF;
+}
+.footer .footer-title{
+    position: relative;
+    top:.08rem;
+    display: block;
+    font-size: .2rem;
+}
+/*Í¼±ê*/
+.footer .icon{
+    position: relative;
+    top:.07rem;
+    height: .5rem;
+    font-size: .5rem;
+    line-height: .5rem;
+    z-index: 20;
+    /*padding: .5rem .1rem;*/
+}
