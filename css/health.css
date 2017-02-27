@@ -1,0 +1,67 @@
+.order-topic-li{
+    background: #eee;
+}
+header#bar{
+    position:fixed;
+    top:0;
+    right: 0;
+    left:0;
+    z-index: 10;
+}
+.ol-item ul li{
+    position: relative;
+    top:.85rem;
+    background: #FFFFFF;
+    margin-bottom: 10px;
+    border-radius: .1rem;
+
+}
+.ol-item ul li .date{
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: .1rem;
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+    font-size: .2rem;
+}
+.ol-item ul li .patient{
+    padding-left: .1rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: .15rem;
+}
+.ol-item ul li .patient .name{
+    padding-top: .07rem;
+    padding-bottom: .07rem;
+}
+.ol-item ul li .patient .name span:first-child,.ol-item ul li .patient .history span:first-child{
+    color: black;
+    font-size: .25rem;
+}
+.ol-item ul li .patient .name span:last-child,.ol-item ul li .patient .history span:last-child{
+    font-size: .24rem;
+}
+.ol-item ul li .patient .history{
+    padding-right: .1rem;
+}
+.ol-item ul li .toDeatil{
+    position: relative;
+    right: .2rem;
+   width: 100%;
+   text-align: right;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    font-size: .3rem;
+}
+
+#aBtn{
+    position: fixed;
+    right: .3rem;
+    bottom: .3rem;
+    opacity: .5;
+    width: .9rem;
+    height: .9rem;
+    border-radius: 50%;
+    background-color: #00b7c7;
+    font-size: .6rem;
+    color: #FFFFFF;
+    text-align: center;
+}

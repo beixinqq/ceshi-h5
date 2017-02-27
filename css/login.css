@@ -3,7 +3,7 @@ body{
 }
 html,body{
     width: 100%;
-    background: #ffffff;
+    /*background: #ffffff;*/
     overflow-x: hidden;
     font-family: "Microsoft YaHei";
 
@@ -30,6 +30,7 @@ a{
     margin:.3rem auto;
     border-radius: 5px;
 }
+
 .order-topic-li input{
     border: none;
     width: 70%;
@@ -209,5 +210,36 @@ button.layermbtn{
     letter-spacing: .1rem;
     line-height: .5rem;
     text-align: center;
-
 }
+
+/*------------------------------------------------------------------*/
+header#bar{
+    position: relative;
+    display: box;
+    display: -webkit-box;
+    box-align:center;
+    -webkit-box-align: center;
+    padding: 0 .1rem;
+}
+header#bar a.left{
+    position: relative;
+    z-index: 1;
+    left: 0;
+}
+header#bar a.left img{
+    width: .5rem;
+    height: .5rem;
+    display: block;
+}
+header#bar .tit{
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    line-height: .88rem;
+    font-size: .3rem;
+    letter-spacing: .01rem;
+}
+
+
