@@ -6,7 +6,7 @@ html,body{
     background: #ffffff;
     overflow-x: hidden;
     font-family: "Microsoft YaHei";
-    background: #eee;
+
 }
 .main{
     position: absolute;
@@ -17,6 +17,7 @@ html,body{
     margin: 0 auto;
     max-width: 640px;
     color: #555;
+    background: #eee;
 }
 a{
     display: block;
@@ -31,7 +32,7 @@ a{
 }
 .order-topic-li input{
     border: none;
-    width: 80%;
+    width: 70%;
     height: .6rem;
     padding: .15rem .15rem;
     font-size: .3rem;
@@ -47,6 +48,7 @@ a{
     width: .5rem;
     height: .5rem;
     vertical-align: middle;
+    margin-left: .35rem;
 }
 
 /*¼Ç×¡ÃÜÂë*/
@@ -56,7 +58,12 @@ a{
     margin-left: .36rem;
     padding-left: .5rem;
     font-size: .3rem;
-
+}
+.login-in{
+    position: absolute;
+    top:0;
+    right: .5rem;
+    float: left;
 }
 .login-free b{
     position: absolute;
@@ -81,6 +88,7 @@ a{
 }
 /*µ¯´°*/
 .layermbox{
+    display: none;
     max-width: 640px;
     margin: 0 auto;
     position: absolute;
@@ -189,4 +197,17 @@ button.layermbtn{
     color: white;
     font-weight: 200;
     letter-spacing: .2rem;
+}
+
+/*-------------------------------------×¢²á--------------------------*/
+
+#auth-code{
+    background: rgb(242,242,242);
+    padding: .13rem;
+    border-radius: 5px;
+    font-size: .25rem;
+    letter-spacing: .1rem;
+    line-height: .5rem;
+    text-align: center;
+
 }

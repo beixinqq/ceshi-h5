@@ -18,21 +18,16 @@
     <div class="order-topic-li">
         <input type="mobile" name='mobile' placeholder="请输入手机号">
         <div class="input_br"></div>
+        <input type="password" name='password' placeholder="请输入验证码">
+        <span id="auth-code" class="emptyPwd">验证码</span>
+        <div class="input_br"></div>
         <input type="password" name='password' placeholder="请输入新密码">
         <span class="emptyPwd">
                 <img src="../image/del.png" alt="">
-            </span>
+        </span>
     </div>
     <!--用户和密码 end-->
-
-    <!--记住密码\忘记密码 start---->
-    <div class="login-free">
-        <b></b>记住密码
-        <span class="login-in">忘记密码</span>
-    </div>
-    <!--记住密码\忘记密码 end---->
-
-    <button onclick="login()" class="bindBtn">登录</button>
+    <button onclick="login()" class="bindBtn">注册</button>
 
     <!--弹窗 start-->
     <div class="layermbox">
@@ -42,7 +37,7 @@
                 <div class="layermchild ">
                     <h3>提示</h3>
                     <button class="layermend"></button>
-                    <!--判断用户和密码是否对的-->
+                    <!--判断注册是否对的-->
                     <div class="layermcont">请输入账号</div>
                     <button class="layermbtn">确定</button>
                 </div>
