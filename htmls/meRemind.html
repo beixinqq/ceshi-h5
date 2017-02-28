@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程健康咨询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/addHealth.css">
+    <link rel="stylesheet" href="../css/meRemind.css">
+    <!--rem-->
+    <script src="../js/rem640.js"></script>
+</head>
+<body>
+<div class="main">
+    <!--header-->
+    <header class="bar">用药提醒</header>
+    <a href="javascript:window.location='health.html'" class="back"><</a>
+    <!--nav start-->
+    <section class="content">
+        <div class="order-topic-li">
+            <!--药品名称 start-->
+            <div class="for-section">
+                <label class="input-label" for="dose_name">药品名称</label>
+                <input type="text" class="input-text" id="dose_name" name="dose_name" placeholder="请输入药品名称">
+            </div>
+            <ul class="for-section-ul" style="display: none">
+                <li>胃药名称</li>
+                <li>胃药名称</li>
+                <li>胃药名称</li>
+                <li>胃药名称</li>
+                <li>胃药名称</li>
+            </ul>
+            <!--药品名称 end-->
+            <!--剂量 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_dose">剂量</label>
+                <input type="text" class="input-text" id="user_dose" name="user_dose" placeholder="请输入剂量如一日三次...">
+            </div>
+            <!--剂量 end-->
+            <!--服用提醒时间start-->
+            <div class="for-section" id="for-eat">
+                <span class="serEat-date">服用提醒时间:</span>
+                <select name="serEat-date-3" id="serEat-date-3" class="serEat-date-3">
+                    <option value='0' selected="selected">早</option>
+                    <option value="1">中</option>
+                    <option value="2">晚</option>
+                </select>
+            </div>
+            <!--服用提醒时间end-->
+            <div class="clear"></div>
+            <!--药品服用结束时间 start-->
+            <div class="for-section" id="for-eat-end">
+                <span class="serEat-date">药品服用结束时间:</span>
+                <input class="eat-dateEnd" type="date" value="2015-09-24" min="2015-09-16" max="2015-09-26"/>
+            </div>
+            <!--药品服用结束时间 end-->
+        </div>
+    </section>
+    <section class="footer footer-btn" id="eatbtn">
+        <a  href="javascript:window.location='seeHealth.html'" >保存</a>
+        <a href="javascript:window.location='health.html'">取消</a>
+    </section>
+    <!--nav end-->
+</div>
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程健康咨询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/addHealth.css">
+    <!--rem-->
+    <script src="../js/rem640.js"></script>
+</head>
+<body>
+<div class="main">
+    <!--header-->
+    <header class="bar">健康档案</header>
+    <a href="javascript:window.location='health.html'" class="back"><</a>
+    <!--nav start-->
+    <section class="content">
+        <div class="order-topic-li">
+            <!--姓名 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_name">姓名</label>
+                <input type="text" class="input-text" id="user_name" name="user_name" placeholder="请输入姓名" value="王晓行" disabled>
+            </div>
+            <!--姓名 end-->
+            <!--手机号 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_iphone">性别</label>
+                <input type="text" class="input-text" id="user_iphone" name="user_iphone" placeholder="请输入手机号" value="1234567890"  disabled>
+            </div>
+            <!--手机号 end-->
+            <!--性别 年龄start-->
+            <div class="for-section" id="for-gener-age">
+                <select name="gender" id="gener" class="gender"  disabled>
+                    <option value='0' >性别</option>
+                    <option value="男" selected="selected">男</option>
+                    <option value="女">女</option>
+                </select>
+                <select name="age" id="age" class="age"  disabled>
+                    <option value='0' >年龄</option>
+                    <option value="1" selected="selected">1岁</option>
+                    <option value="2">2岁</option>
+                </select>
+            </div>
+            <!--性别 年龄end-->
+            <div class="clear"></div>
+            <!--身份证号码 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_hao">身份证号码</label>
+                <input type="text" class="input-text" id="user_hao" name="user_hao" placeholder="请输入身份证号码" value="111111111111111111111111"  disabled>
+            </div>
+            <!--身份证号码 end-->
+            <!--家庭住址 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_address">家庭地址</label>
+                <textarea name="user_address" id="user_address" placeholder="请输入家庭住址"  disabled></textarea>
+            </div>
+            <!--家庭住址 end-->
+            <!--联系人 start-->
+            <div class="for-section" id="contacts">
+                <label class="input-label" for="user_hao">联系人</label>
+                <input type="text" class="input-text" id="contacts-user" name="user_hao" placeholder="请输入联系人的姓名" value="巴巴变"  disabled>
+                <div class="br"></div>
+                <input type="text" class="input-text" id="contacts-hao" name="user_hao" placeholder="请输入联系人的电话" value="11111111111111111"  disabled>
+            </div>
+            <!--联系人 end-->
+            <!--疾病史 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_dhistory">疾病史</label>
+                <textarea name="user_dhistory" id="user_dhistory" placeholder="请输入疾病史......"  disabled></textarea>
+            </div>
+            <!--疾病史 end-->
+            <!--过敏史 start-->
+            <div class="for-section">
+                <label class="input-label" for="user_ahistory">过敏史</label>
+                <textarea name="user_ahistory" id="user_ahistory" placeholder="请输入过敏史......"  disabled></textarea>
+            </div>
+            <!--过敏史 end-->
+        </div>
+    </section>
+    <section class="footer footer-btn">
+        <a href="">修改</a>
+        <a href="">完成</a>
+    </section>
+</div>
+</body>
+
+</html>

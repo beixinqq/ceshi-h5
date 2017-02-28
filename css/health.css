@@ -1,12 +1,18 @@
 .order-topic-li{
     background: #eee;
 }
+.content{
+    bottom: .1rem;
+}
 header#bar{
     position:fixed;
     top:0;
     right: 0;
     left:0;
     z-index: 10;
+}
+.order-topic-li{
+    margin: -.7rem auto;
 }
 .ol-item ul li{
     position: relative;
@@ -60,8 +66,8 @@ header#bar{
 }
 
 #aBtn{
-    position: fixed;
-    right: .3rem;
+    position:absolute;
+    right: .35rem;
     bottom: .3rem;
     opacity: .5;
     width: .9rem;
