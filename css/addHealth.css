@@ -1,0 +1,47 @@
+.order-topic-li{
+    background: #eee;
+}
+.order-topic-li .for-section {
+    position: relative;
+    padding-top: .05rem;
+    text-align: left;
+    border: 1px solid gray;
+    margin: 0 0 .17rem;
+    background: #FFFFFF;
+}
+.order-topic-li input{
+    padding: .15rem .18rem;
+    height: .45rem;
+    width: 80%;
+}
+.input-label{
+    position: absolute;
+    top:-.09rem;
+    left:.1rem;
+    z-index: 2;
+    padding: 0 .1rem;
+    line-height: 18px;
+    color: #b0b0b0;
+    cursor: text;
+    font-size: .19rem;
+    background: #FFFFFF;
+
+}
+#for-gener{
+    position: relative;
+    border: none;
+    background: #eee;
+}
+.gender select,.age select {
+    width: 45%;
+    height: .7rem;
+    border: 1px solid gray;
+    font-size: .3rem;
+    padding-left: .7rem;
+}
+.age select{
+    margin-left: 9%;
+}
+.for-section option{
+    width: 1.2rem;
+}

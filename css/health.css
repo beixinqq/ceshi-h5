@@ -41,15 +41,22 @@ header#bar{
 }
 .ol-item ul li .patient .history{
     padding-right: .1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    display:-webkit-box;
+-webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+
 }
 .ol-item ul li .toDeatil{
     position: relative;
     right: .2rem;
    width: 100%;
    text-align: right;
-    padding-top: .15rem;
-    padding-bottom: .15rem;
-    font-size: .3rem;
+    padding-top: .12rem;
+    padding-bottom: .12rem;
+    font-size: .25rem;
 }
 
 #aBtn{
