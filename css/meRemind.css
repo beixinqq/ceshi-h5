@@ -28,7 +28,8 @@ ul.for-section-ul li:last-child{
 }
 #for-eat #serEat-date-3{
     width: 30%;
-    height: .7rem;
+    height: .8rem;
+    line-height: .8rem;
     font-size: .3rem;
     text-align: center;
     margin-left: .9rem;
