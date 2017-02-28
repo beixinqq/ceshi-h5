@@ -37,24 +37,57 @@
                 </div>
                 <!--手机号 end-->
                 <!--性别 年龄start-->
-                <div class="for-section" id="for-gener">
-                    <for class="gender">
-                        <select name="gender" id="">
+                <div class="for-section" id="for-gener-age">
+                        <select name="gender" id="gener" class="gender">
                             <option value='0' selected="selected">性别</option>
                             <option value="男">男</option>
                             <option value="女">女</option>
                         </select>
-                    </for>
-                    <for class="age" id="for-age">
-                        <select name="age" id="">
+                        <select name="age" id="age" class="age">
                             <option value='0' selected="selected">年龄</option>
                             <option value="1">1岁</option>
                             <option value="2">2岁</option>
                         </select>
-                    </for>
                 </div>
                 <!--性别 年龄end-->
+                <div class="clear"></div>
+                <!--身份证号码 start-->
+                <div class="for-section">
+                    <label class="input-label" for="user_hao">身份证号码</label>
+                    <input type="text" class="input-text" id="user_hao" name="user_hao" placeholder="请输入身份证号码">
+                </div>
+                <!--身份证号码 end-->
+                <!--家庭住址 start-->
+                <div class="for-section">
+                    <label class="input-label" for="user_address">家庭地址</label>
+                    <textarea name="user_address" id="user_address" placeholder="请输入家庭住址"></textarea>
+                </div>
+                <!--家庭住址 end-->
+                <!--联系人 start-->
+                <div class="for-section" id="contacts">
+                    <label class="input-label" for="user_hao">联系人</label>
+                    <input type="text" class="input-text" id="contacts-user" name="user_hao" placeholder="请输入联系人的姓名">
+                    <div class="br"></div>
+                    <input type="text" class="input-text" id="contacts-hao" name="user_hao" placeholder="请输入联系人的电话">
+                </div>
+                <!--联系人 end-->
+                <!--疾病史 start-->
+                <div class="for-section">
+                    <label class="input-label" for="user_dhistory">疾病史</label>
+                    <textarea name="user_dhistory" id="user_dhistory" placeholder="请输入疾病史......"></textarea>
+                </div>
+                <!--疾病史 end-->
+                <!--过敏史 start-->
+                <div class="for-section">
+                    <label class="input-label" for="user_ahistory">过敏史</label>
+                    <textarea name="user_ahistory" id="user_ahistory" placeholder="请输入过敏史......"></textarea>
+                </div>
+                <!--过敏史 end-->
             </div>
+        </section>
+        <section class="footer footer-btn">
+            <a href="">保存</a>
+            <a href="">取消</a>
         </section>
         <!--nav end-->
     </div>

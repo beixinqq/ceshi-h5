@@ -1,17 +1,21 @@
+.content{
+    bottom: .88rem;
+}
 .order-topic-li{
     background: #eee;
 }
 .order-topic-li .for-section {
     position: relative;
     padding-top: .05rem;
+    padding-bottom: .05rem;
     text-align: left;
     border: 1px solid gray;
     margin: 0 0 .17rem;
     background: #FFFFFF;
 }
-.order-topic-li input{
+.order-topic-li input,.order-topic-li textarea{
     padding: .15rem .18rem;
-    height: .45rem;
+    height: .44rem;
     width: 80%;
 }
 .input-label{
@@ -27,21 +31,83 @@
     background: #FFFFFF;
 
 }
-#for-gener{
+#for-gener-age{
     position: relative;
+    width: 100%;
     border: none;
     background: #eee;
 }
-.gender select,.age select {
+
+#for-gener-age #gener,#for-gener-age #age{
     width: 45%;
     height: .7rem;
     border: 1px solid gray;
     font-size: .3rem;
     padding-left: .7rem;
 }
-.age select{
-    margin-left: 9%;
+#for-gener-age #age{
+    position: absolute;
+    right: 0;
 }
-.for-section option{
-    width: 1.2rem;
+#user_address{
+    width: 90%;
+    height: .6rem;
+    line-height: .3rem;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-top: .2rem;
+    font-size: .3rem;
 }
+#user_dhistory,#user_ahistory{
+    height: 1.7rem;
+    width: 90%;
+    line-height: .3rem;
+    border:none;
+    outline: none;
+    resize: none;
+    margin-top: .2rem;
+    font-size: .3rem;
+}
+#contacts input{
+    height: .44rem;
+}
+.br{
+    border-bottom: 1px solid gray;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: .01rem;
+
+}
+.footer{
+    background-color: #e5e5e5;
+}
+.footer-btn{
+    display: -webkit-box;
+    display: box;
+    justify-content: space-around;
+    height: .88rem;
+    line-height: .88rem;
+    padding-top: .15rem;
+}
+.footer-btn a{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: .7rem;
+    text-align: center;
+    font-size: .4rem;
+    line-height: .7rem;
+    color: #FFFFFF;
+    letter-spacing: .2rem;
+    background-color: #2ec5ce;
+}
+/*.footer-btn a:first-child{*/
+    /*background-color: #2ec5ce;*/
+/*}*/
+/*.footer-btn a:last-child{*/
+    /*color: gray;*/
+    /*background-color: #FFFFFF;*/
+/*}*/
+
+
