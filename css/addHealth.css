@@ -1,6 +1,17 @@
 .content{
     bottom: .88rem;
 }
+.back{
+    position: absolute;
+    top:0;
+    height: .88rem;
+    line-height: .88rem;
+    padding-left: .2rem;
+    font-size: .5rem;
+    color: #fff;
+    font-weight: 900;
+    z-index: 20;
+}
 .order-topic-li{
     background: #eee;
 }
@@ -10,6 +21,7 @@
     padding-bottom: .05rem;
     text-align: left;
     border: 1px solid gray;
+
     margin: 0 0 .17rem;
     background: #FFFFFF;
 }
