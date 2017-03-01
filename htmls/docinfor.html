@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程健康咨询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/health.css">
+    <!--rem-->
+    <script src="../js/rem640.js"></script>
+    <style>
+        .ol-item ul li{
+            padding: .1rem;
+        }
+        .ol-item li .doc-photo{
+            float: left;
+           width: 25%;
+        }
+        .ol-item li .doc-photo img{
+            width: 100%;
+            height: 100%;
+        }
+        .order-topic-li #patient{
+            border-bottom: none;
+        }
+        .ol-item .patient{
+            float: right;
+            width: 72%;
+        }
+        .ol-item .patient .doc-name{
+            font-size: .26rem;
+        }
+        .ol-item .patient .doc-name span:nth-child(2n),.layermchild .doc-name span:nth-child(2n){
+            margin-left: .1rem;
+            margin-right: .1rem;
+        }
+        .ol-item .patient .doc-content{
+            font-size: .26rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display:-webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:3;
+        }
+        .ol-item ul li .toDeatil{
+            right: 0;
+            border-top: 1px solid #eeeeee;
+            padding-top: .05rem;
+            padding-bottom: 0;
+        }
+        .layermbox{
+            top:.885rem;
+        }
+        .layermcont{
+            line-height: .5rem;
+            padding: .14rem .2rem;
+        }
+        .layermcont{
+            font-size: .27rem;
+        }
+        .layermchild{
+            /*left: 50%;*/
+            /*margin-left: -155px;*/
+            /*max-width: 310px;*/
+            left: 0;
+            /*margin-left: -155px;*/
+            max-width: 630px;
+            min-width: 300px;
+            margin: 0 auto;
+
+        }
+
+        .layermain .section{
+            padding-left: .1rem;
+            padding-right: .1rem;
+        }
+        .layermcont span{
+           width: 100%;
+            height: 100%;
+        }
+        .layermcont span:first-child{
+            font-weight: 600;
+        }
+        .layermcont .photo{
+            margin: 0 auto;
+        }
+        .layermcont .photo img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main">
+    <!--header-->
+    <header class="bar">医生信息</header>
+    <a href="javascript:window.location='../index.html'" class="back"><</a>
+    <!--nav start-->
+    <section class="content">
+        <div class="order-topic-li ol-item">
+            <ul>
+                <li>
+                    <a class="doc-photo"><img src="../image/doctor.jpg" alt=""></a>
+                    <div class="patient" id="patient">
+                        <div class="doc-name">
+                           <span>卞书春</span><span>,</span><span>女</span><span>,</span><span>68岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li>
+                    <div class="doc-photo"><img src="../image/doctor.jpg" alt=""></div>
+                    <div class="patient" id="patient">
+                        <div class="doc-name">
+                            <span>卞书春</span><span>,</span><span>女</span><span>,</span><span>68岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li>
+                    <div class="doc-photo"><img src="../image/doctor.jpg" alt=""></div>
+                    <div class="patient" id="patient">
+                        <div class="doc-name">
+                            <span>卞书春</span><span>,</span><span>女</span><span>,</span><span>68岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li>
+                    <div class="doc-photo"><img src="../image/doctor.jpg" alt=""></div>
+                    <div class="patient" id="patient">
+                        <div class="doc-name">
+                            <span>卞书春</span><span>,</span><span>女</span><span>,</span><span>68岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li>
+                    <div class="doc-photo"><img src="../image/doctor.jpg" alt=""></div>
+                    <div class="patient" id="patient">
+                        <div class="doc-name">
+                            <span>卞书春</span><span>,</span><span>女</span><span>,</span><span>68岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <!--end 健康档案-->
+    </section>
+    </section>
+
+    <!--弹窗 start-->
+    <div class="layermbox" style="display: block;">
+        <div class="laymshade"></div>
+        <div class="layermain">
+            <div class="section">
+                <!--查看详解start-->
+                <div class="layermchild " style="display:block">
+                    <h3>查看详解</h3>
+                    <!--判断用户和密码是否对的-->
+                    <div class="layermcont">
+                        <!--start-->
+                        <div class="sname doc-name">
+                            <span>姓名：</span><span>卞书春</span>
+                        </div>
+                        <div class="sname doc-name">
+                            <span>性别：</span><span>女</span>
+                        </div>
+                        <div class="sname doc-name">
+                            <span>年龄：</span><span>67岁</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>身份证号码：</span>
+                            <span>2323232323xxxxxxx</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>执业资格证：</span>
+                            <span>xxxxxxxxx证，xxxxxxxxx证，xxxxxxxxx证，xxxxxxxxx证，</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>擅长治疗病症：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+                        <div class="doc-content">
+                            <span>从业机构：</span>
+                            <span>熟练运用中西医结合疗法治疗各类内分泌疾病。产科方面，熟练诊断和处理疑难及危重病人，同时在不孕不育的治疗方面积累了丰富的临床经验。</span>
+                        </div>
+
+                        <!--end-->
+                    </div>
+                    <button class="layermbtn">关闭</button>
+                </div>
+                <!--查看详解end-->
+                <!--点击照片 start-->
+                <div class="layermchild " style="display: none">
+                    <h3>医生照片</h3>
+                    <!--判断用户和密码是否对的-->
+                    <div class="layermcont">
+                        <!--医生头像 start-->
+                        <div class="photo"><img src="../image/doctor.jpg" alt=""></div>
+                        <!--医生头像 end-->
+                    </div>
+                    <button class="layermbtn">关闭</button>
+                </div>
+                <!--点击照片 end-->
+
+
+            </div>
+        </div>
+    </div>
+    <!--弹窗 end-->
+
+</div>
+</body>
+
+</html>

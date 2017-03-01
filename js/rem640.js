@@ -4,7 +4,7 @@
 ~function () {
     var desW = 640;
     var winW = document.documentElement.clientWidth;
-    if (winW > 640) {
+    if (winW >= 640) {
         document.documentElement.style.fontSize='60px';
         return;
     };
