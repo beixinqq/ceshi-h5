@@ -1,0 +1,22 @@
+.search{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0.1rem;
+    top:0.02rem;
+    z-index: 40;
+
+}
+.search input{
+    position: absolute;
+    left: 0;
+    width: 95%;
+    height: 0.5rem;
+}
+.search img{
+    position: absolute;
+    top:.1rem;
+    right: .1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+}

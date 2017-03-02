@@ -14,16 +14,16 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/health.css">
+    <link rel="stylesheet" href="../css/search.css">
     <!--rem-->
     <script src="../js/rem640.js"></script>
     <style>
-        .order-topic-li li{
-            width: 49%;
-            float: left;
 
+        .ol-item ul li{
+            top: 1rem;;
         }
-        .order-topic-li li:nth-child(2n+2){
-            float: right;
+        .order-topic-li{
+            margin: .08rem auto;
         }
         .order-topic-li li .name{
             font-size: .15rem;
@@ -46,6 +46,15 @@
         .layermcont .sname{
             font-weight: 700;
         }
+        .patient{
+            padding: .1rem;
+        }
+        .patient img{
+            width: 1.8rem;
+            height: 1.8rem;
+            float: left;
+            margin-right:.1rem;
+        }
     </style>
 
 </head>
@@ -55,12 +64,60 @@
     <header class="bar">用药提醒</header>
     <a href="javascript:window.location='../index.html'" class="back"><</a>
     <!--nav start-->
+
     <section class="content">
         <div class="order-topic-li ol-item">
+            <!--search start-->
+            <div class="search">
+                <form action="">
+                    <input type="text" name="search" placeholder="搜索药品名称....">
+                </form>
+                <img src="../image/search.jpg" alt="">
+            </div>
+            <!--search start end-->
             <ul>
-                <li>
+                <li class="clear">
                     <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
                     <div class="patient">
+                        <img src="../image/yao.jpg" alt="">
+                        <div class="name">
+                            <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
+                        </div>
+                        <div class="name">
+                            <span>剂量：</span><span>一日三次</span>
+                        </div>
+                        <div class="name">
+                            <span>服用提醒时间：</span><span>晚</span>
+                        </div>
+                        <div class="name">
+                            <span>服用结束时间：</span><span>2016-4-4</span>
+                        </div>
+                    </div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li class="clear">
+                    <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
+                    <div class="patient">
+                        <img src="../image/yao.jpg" alt="">
+                        <div class="name">
+                            <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
+                        </div>
+                        <div class="name">
+                            <span>剂量：</span><span>一日三次</span>
+                        </div>
+                        <div class="name">
+                            <span>服用提醒时间：</span><span>晚</span>
+                        </div>
+                        <div class="name">
+                            <span>服用结束时间：</span><span>2016-4-4</span>
+                        </div>
+                    </div>
+                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
+                </li>
+                <li class="clear">
+                    <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
+                    <div class="patient">
+                        <img src="../image/yao.jpg" alt="">
                         <div class="name">
                             <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
                         </div>
@@ -79,60 +136,7 @@
                 <li>
                     <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
                     <div class="patient">
-                        <div class="name">
-                            <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
-                        </div>
-                        <div class="name">
-                            <span>剂量：</span><span>一日三次</span>
-                        </div>
-                        <div class="name">
-                            <span>服用提醒时间：</span><span>晚</span>
-                        </div>
-                        <div class="name">
-                            <span>服用结束时间：</span><span>2016-4-4</span>
-                        </div>
-                    </div>
-                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
-                </li>
-                <li>
-                    <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
-                    <div class="patient">
-                        <div class="name">
-                            <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
-                        </div>
-                        <div class="name">
-                            <span>剂量：</span><span>一日三次</span>
-                        </div>
-                        <div class="name">
-                            <span>服用提醒时间：</span><span>晚</span>
-                        </div>
-                        <div class="name">
-                            <span>服用结束时间：</span><span>2016-4-4</span>
-                        </div>
-                    </div>
-                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
-                </li>
-                <li>
-                    <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
-                    <div class="patient">
-                        <div class="name">
-                            <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
-                        </div>
-                        <div class="name">
-                            <span>剂量：</span><span>一日三次</span>
-                        </div>
-                        <div class="name">
-                            <span>服用提醒时间：</span><span>晚</span>
-                        </div>
-                        <div class="name">
-                            <span>服用结束时间：</span><span>2016-4-4</span>
-                        </div>
-                    </div>
-                    <a class="toDeatil"  href="javascript:window.location='seeHealth.html'" >查看详情</a>
-                </li>
-                <li>
-                    <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
-                    <div class="patient">
+                        <img src="../image/yao.jpg" alt="">
                         <div class="name">
                             <span>名称：</span><span>阿玛阿玛阿玛asasasas药</span>
                         </div>
@@ -158,7 +162,7 @@
     </section>
 
     <!--弹窗 start-->
-    <div class="layermbox" style="display: block">
+    <div class="layermbox" style="display: none">
         <div class="laymshade"></div>
         <div class="layermain">
             <div class="section">
