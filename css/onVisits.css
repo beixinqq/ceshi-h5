@@ -1,0 +1,141 @@
+.select-doc{
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.select-doc label,.select-doc .hospital,.select-doc .select-down{
+    height: .8rem;
+    line-height: .8rem;
+}
+.select-doc label{
+    float: left;
+    font-size: .3rem;
+    margin-right: .3rem;
+}
+.select-doc .hospital{
+    float: left;
+    font-size: .3rem;
+    width: 55%;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px solid gray;
+    border-right: none;
+    color: gray;
+}
+.select-doc .select-down{
+    float: left;
+    width: 15%;
+    color: gray;
+    font-size: .3rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px solid gray;
+    border-left: 1px solid gray;
+}
+/*描述病症*/
+
+#conDesc,#imgPush{
+    width: 90%;
+    margin: .1rem auto;
+}
+#conDesc label,#imgPush label{
+    display: block;
+    font-size: .3rem;
+    margin-top: .1rem;
+    margin-bottom: .1rem;
+}
+#conDesc textarea{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    resize: none;
+    height: 3rem;
+    margin-top: .03rem;
+    border: none;
+    border-radius: .1rem;
+    line-height: .2rem;
+    font-size: .3rem;
+}
+#imgPush{
+    border-radius: .1rem;
+}
+#imgPush .joinImg{
+    margin: 0 auto;
+    background: #FFFFFF;
+    overflow: hidden;
+    padding: 1%;
+    border-radius: .1rem;
+
+}
+#imgPush .joinImg .Imgs{
+    float: left;
+}
+#imgPush .joinImg .Imgs img{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: .06rem;
+    border-radius: .2rem;
+}
+#imgPush .joinImg a{
+    float: left;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid gray;
+    margin:.06rem;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 2rem;
+    color: #e1e1e2;
+    border-radius: .2rem;
+}
+/*确定*/
+.btnOk{
+    margin: 0.2rem auto;
+    width: 40%;
+    background: #2ec5ce;
+    height: 1rem;
+    line-height:1rem;
+    border-radius: .2rem;
+    text-align: center;
+    font-size: .4rem;
+    letter-spacing: .1rem;
+    color: white;
+}
+
+/*点击下拉列表*/
+.select-list{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    /*height: 3rem;*/
+    /*background: red;*/
+}
+
+.hospital-list{
+    position: absolute;
+    top:.834rem;
+    right: 0rem;
+    max-height: 3rem;
+    background: #FFFFFF;
+    border: 1px solid gray;
+
+}
+.hospital-list li{
+
+    width: 3.858rem;
+    height: .4rem;
+    background-color: #FFFFFF;
+    padding-top: .05rem;
+    padding-bottom: .05rem;
+
+}
+.hospital-list li a{
+    font-size: .26rem;
+    padding-left: .1rem;
+}
+.hospital-list li a span:first-child{
+    margin-right: .4rem;
+}

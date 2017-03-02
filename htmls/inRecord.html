@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>远程健康咨询</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/addHealth.css">
+    <!--rem-->
+    <script src="../js/rem640.js"></script>
+    <style>
+        #order-topic-li{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .order-topic-li{
+            display: -webkit-box;
+            display: box;
+        }
+        .order-topic-li .for-section{
+            width: 33%;
+            height: 0.6rem;
+            line-height: .6rem;
+        }
+        .input-label{
+            top:-0.1rem;
+        }
+        .select{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: .3rem;
+        }
+        .select:first-child{
+            border-left: none;
+            border-right: none;
+        }
+        .select:last-child{
+            border-left: none;
+            border-right: none;
+        }
+        .select .hospital,.select .select-down{
+            margin-top: .06rem;
+            float: left;
+            margin-left: .3rem;
+        }
+        .select .hospital{
+            margin-right: .1rem;
+            color: gray;
+        }
+        #see-content{
+            margin-top: -.34rem;
+            /*background-color: #FFFFFF;*/
+        }
+        #see-content ul{
+            width: 100%;
+        }
+        #see-content  li{
+            position: relative;
+            background-color: #FFFFFF;
+            /*border: 1px solid gray;*/
+            width: 100%;
+            margin-bottom: .2rem;
+            border-radius: .2rem;
+        }
+        #see-content li .docName-date{
+            border-bottom: 1px solid #e5e5e5;
+            line-height: .2rem;
+            font-size: .23rem;
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+            padding-left: .1rem;
+        }
+        .doc-img-content{
+            position: relative;
+            padding: .1rem;
+            overflow: hidden;
+            height: 2rem;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .doc-img-content .doc-img{
+            position: absolute;
+            top:.1rem;
+            left: .1rem;
+            width: 2rem;
+            height: 2rem;
+            background: red;
+        }
+        .doc-solove{
+            position: relative;
+            padding: .1rem;
+            padding-top: .02rem;
+            font-size: .24rem;
+        }
+        .doc-img-content .doc-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .doc-img-content .doc-content{
+            position: absolute;
+            left:2.2rem;
+        }
+        .doc-img-content .doc-content .doc-patient-name{
+            font-size: .26rem;
+        }
+        .doc-img-content .doc-content .doc-patient-content{
+            font-size: .26rem;
+        }
+        #see-content .doc-name{
+            border-top: 1px solid #e5e5e5;
+            text-align: right;
+            font-size: .26rem;
+            padding-top: .05rem;
+            padding-bottom: .05rem;
+            padding-right: .1rem;
+        }
+        .doc-patient-name span:first-child,.doc-patient-content span:first-child,.doc-solove span:first-child,.doc-name span:first-child{
+            color: black;
+            margin-right: .04rem;
+        }
+        /*下拉列表*/
+        .select3s{
+            margin-left: 5%;
+            width: 90%;
+            position: absolute;
+            top:1.02rem;
+            z-index: 30;
+            background-color: #FFFFFF;
+            border-bottom-left-radius: .2rem;
+            border-bottom-right-radius: .2rem;
+            max-height: 3rem;
+            overflow: auto;
+            border: 1px solid gray;
+            border-top:1px solid gray ;
+        }
+        .select3s li{
+            position: relative;
+            margin-left: 25%;
+            font-size: .4rem;
+            padding-top: .05rem;
+            padding-bottom: .05rem;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--header-->
+    <header class="bar">问诊记录</header>
+    <a href="javascript:window.location='../index.html'" class="back"><</a>
+    <!--nav start-->
+    <section class="content">
+        <div class="order-topic-li" id="order-topic-li">
+            <!--患者人员 start-->
+            <div class="for-section select select-patient">
+                <label class="input-label">患者人员</label>
+                <div class="hospital">请根据</div>
+                <i class="select-down">V</i>
+            </div>
+            <!--患者人员 end-->
+            <!--时间段查看 start-->
+            <div class="for-section select select-date">
+                <label class="input-label">选择时间段</label>
+                <div class="hospital">请查看</div>
+                <i class="select-down">V</i>
+            </div>
+            <!--时间段查看 end-->
+            <!--哪个医生诊治 start-->
+            <div class="for-section select select-doc">
+                <label class="input-label">医生诊治</label>
+                <div class="hospital">请选择</div>
+                <i class="select-down">V</i>
+            </div>
+            <!--哪个医生诊治 end-->
+        </div>
+        <!--显示下拉列表 start-->
+        <ul class="select3s">
+           <li><span>2013-12-34</span></li>
+            <li><span>2013-2-3</span></li>
+            <li><span>2013-12-34</span></li>
+            <li><span>2013-2-3</span></li>
+            <li><span>2013-12-34</span></li>
+            <li><span>2013-2-3</span></li>
+            <li><span>2013-12-34</span></li>
+            <li><span>2013-2-3</span></li>
+
+        </ul>
+        <!--显示下拉列表 end-->
+        <div></div>
+        <!--搜索+查看 start-->
+        <div class="order-topic-li" id="see-content">
+            <ul>
+                <li>
+                    <div class="docName-date">
+                        <span>诊治日期:</span><span>2017-05-23</span>
+                    </div>
+                    <div class="doc-img-content">
+                        <div class="doc-img"><img src="../image/gu.jpg" alt=""></div>
+                        <div class="doc-content">
+                            <div class="doc-patient-name"><span>患者：</span><span>小红</span></div>
+                            <div class="doc-patient-content">
+                                <span>描述病症：</span><span>喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-solove">
+                        <span>解决病症：</span><span>解决解决解决解决解决......</span>
+                    </div>
+                    <div class="doc-name"><span>诊治医生:</span><span>张医师</span></div>
+                </li>
+                <li>
+                    <div class="docName-date">
+                        <span>诊治日期:</span><span>2017-05-23</span>
+                    </div>
+                    <div class="doc-img-content">
+                        <div class="doc-img"><img src="../image/gu.jpg" alt=""></div>
+                        <div class="doc-content">
+                            <div class="doc-patient-name"><span>患者：</span><span>小红</span></div>
+                            <div class="doc-patient-content">
+                                <span>描述病症：</span><span>喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜喜</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doc-solove">
+                        <span>解决病症：</span><span>解决解决解决解决解决......</span>
+                    </div>
+                    <div class="doc-name"><span>诊治医生:</span><span>张医师</span></div>
+                </li>
+            </ul>
+        </div>
+        <!--搜索+查看 end-->
+    </section>
+
+</div>
+</body>
+
+</html>
