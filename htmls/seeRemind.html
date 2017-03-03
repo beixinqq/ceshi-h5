@@ -18,9 +18,8 @@
     <!--rem-->
     <script src="../js/rem640.js"></script>
     <style>
-
         .ol-item ul li{
-            top: 1rem;;
+            top:.07rem;
         }
         .order-topic-li{
             margin: .08rem auto;
@@ -55,6 +54,7 @@
             float: left;
             margin-right:.1rem;
         }
+
     </style>
 
 </head>
@@ -63,18 +63,19 @@
     <!--header-->
     <header class="bar">用药提醒</header>
     <a href="javascript:window.location='../index.html'" class="back"><</a>
+    <!--<a href="javascript:;" class="icon_search">搜索</a>-->
     <!--nav start-->
+    <!--search start-->
+    <div class="search">
+        <form action="">
+            <input type="text" name="search" placeholder="搜索药品名称....">
+        </form>
+        <img src="../image/search.jpg" alt="">
+    </div>
+    <!--search start end-->
 
     <section class="content">
         <div class="order-topic-li ol-item">
-            <!--search start-->
-            <div class="search">
-                <form action="">
-                    <input type="text" name="search" placeholder="搜索药品名称....">
-                </form>
-                <img src="../image/search.jpg" alt="">
-            </div>
-            <!--search start end-->
             <ul>
                 <li class="clear">
                     <div class="date"><span>日期：</span><span>2017-5-9 14:23</span></div>
@@ -195,4 +196,6 @@
 </div>
 </body>
 
+<script src="../js/zepto.min.js"></script>
+<script src="../js/index.js"></script>
 </html>

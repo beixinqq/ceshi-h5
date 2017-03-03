@@ -185,4 +185,14 @@ header.bar{
     font-weight: 900;
     z-index: 20;
 }
+.icon_search{
+    position:absolute;
+    top: 0.01rem;
+    right: 0.2rem;
+    z-index: 20;
+    font-size: .3rem;
+    line-height: .88rem;
+    color: #FFFFFF;
+}
+
 

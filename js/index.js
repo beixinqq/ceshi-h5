@@ -1,13 +1,23 @@
-/**
- * Created by qiubeixin on 2017/2/25.
- */
 
-var Myswiper = new Swiper('.swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    spaceBetween: 10,
-    centeredSlides: true,
-    autoplay: 2500,
-    autoplayDisableOnInteraction: false
-});
-
+//ÏÔÊ¾ËÑË÷
+var iconSearch=(function () {
+    var $header_search=$('.icon_search'),
+        $inputSearch=$('.search');
+    var isBok=false;
+    return {
+        init:function () {
+            $header_search.tap(function () {
+                if(isBok){
+                    $inputSearch.css({height:0});
+                    isBok=false;
+                    return;
+                }
+                $inputSearch.css({
+                    height:'.88rem'
+                });
+                isBok=true;
+            })
+        }
+    }
+})();
+iconSearch.init();

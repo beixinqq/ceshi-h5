@@ -1,22 +1,37 @@
+.content{
+    top:1.6rem;
+}
 .search{
     position: relative;
-    left: 0;
-    bottom: 0;
-    right: 0.1rem;
-    top:0.02rem;
+    /*overflow: hidden;*/
+    left: 1%;
+    right:1% ;
+    top:1rem;
     z-index: 40;
+    transition: all 0.3s linear 0s;
+    margin: 0 auto;
+    /*height: 0;*/
+    border-radius: .2rem;
 
 }
 .search input{
     position: absolute;
-    left: 0;
-    width: 95%;
-    height: 0.5rem;
+    left: 1%;
+    right:1% ;
+    width: 94%;
+    height: .6rem;
+    /*border: 1px solid gray;*/
+    padding-left:2% ;
+    font-size: .3rem;
+    border: none;
+    border-radius: .2rem;
+
+
 }
 .search img{
     position: absolute;
     top:.1rem;
-    right: .1rem;
-    width: 0.6rem;
-    height: 0.6rem;
+    right: .3rem;
+    width: 0.4rem;
+    height: 0.4rem;
 }
